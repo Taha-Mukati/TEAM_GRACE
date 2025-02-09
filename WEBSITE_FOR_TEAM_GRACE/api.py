@@ -28,8 +28,8 @@ model = pickle.load(open("model.pkl", "rb"))
 
 # Load the saved label encoder
 label_encoder = pickle.load(open("label_encoders.pkl", "rb"))
-weather_encoder = label_encoders["weather_condition"]
-roadway_encoder = label_encoders["roadway_surface_cond"]
+weather_encoder = label_encoder["weather_condition"]
+roadway_encoder = label_encoder["roadway_surface_cond"]
 
 
 # Weather API setup

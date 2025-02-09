@@ -1,0 +1,17 @@
+services:
+  API:
+    build:
+      context: .
+      dockerfile: Dockerfile.Back
+    image: fr
+    container_name: back
+    ports:
+      - "6000:6000"
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile.Front
+    image: ba
+    container_name: front
+    ports:
+      - "8501:8501"

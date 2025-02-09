@@ -1,2 +1,2 @@
 sudo docker build -t back --file Dockerfile.Back .
-sudo docker run -p "6000:6000" back
+sudo docker run --name BackEnd -p "6000:6000" back
