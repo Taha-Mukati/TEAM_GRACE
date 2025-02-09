@@ -73,4 +73,4 @@ def predict():
     return jsonify({"risk_score": round(risk_score, 2), "severity": severity})
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=6000)
+    app.run(debug=True, host="0.0.0.0", port=5000)

@@ -6,12 +6,14 @@ services:
     image: fr
     container_name: back
     ports:
-      - "6000:6000"
+      - "5000:5000"
   front:
     build:
       context: .
       dockerfile: Dockerfile.Front
     image: ba
+    environment:
+      DockHost: "back"
     container_name: front
     ports:
       - "8501:8501"
